@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo Profissional</title>
+    <!-- Aqui está o link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="user-info">
+            <label for="user-photo" class="user-photo-label">
+                <img id="user-photo-preview" src="default-avatar.png" alt="Foto do Usuário">
+            </label>
+            <input type="file" id="user-photo" accept="image/*" style="display: none;">
+            <input type="text" id="username" placeholder="Nome de Usuário">
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="message-input">
+            <input type="text" id="message" placeholder="Digite uma mensagem...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+    <!-- Aqui está o link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
